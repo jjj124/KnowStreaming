@@ -1,5 +1,5 @@
 esaddr=127.0.0.1
-port=8060
+port=9200
 curl -s --connect-timeout 10 -o /dev/null  http://${esaddr}:${port}/_cat/nodes >/dev/null 2>&1 
 if [ "$?" != "0" ];then
     echo "Elasticserach 访问失败, 请安装完后检查并重新执行该脚本 "
